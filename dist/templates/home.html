@@ -1,0 +1,22 @@
+<div class="col-md-7">
+	<form name="searchForm" class="navbar-form navbar-left" role="search" novalidate>
+  		<div class="jumbotron">
+			<h1>Enter a number to search</h1>
+
+  		<div class="form-group">
+    		<input type="number" class="searchField form-control"
+    			placeholder="Enter a number"
+    			ng-model="searchNumber" required>
+  		</div>
+  		<p>
+  		<button type="submit" class="btn btn-primary btn-lg"
+  				ng-disabled="searchForm.$invalid"
+  				ng-click="save()">Search</button>
+  		</p>
+
+  		</div>
+	</form>
+</div>
+<div class="col-md-5">
+	<div ng-include="'templates/giventree.html'"></div>
+</div>
